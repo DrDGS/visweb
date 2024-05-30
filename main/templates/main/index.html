@@ -1,0 +1,64 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Main page{% endblock %}
+
+{% block content %}
+    <div id = contentHeader>
+        <img src = https://www.mdpi.com/asi/asi-06-00074/article_deploy/html/images/asi-06-00074-g002-550.jpg>
+        <h1>Технлогии трёхмерной визуализации<br>операторов агрегирования и в архитектуре</h1>
+    </div>
+    <div id = content>
+        <div id = content1>
+            <h2>Трёхмерная визуализация — это процесс создания графического контента с использованием 3D-программного обеспечения. <br><br>
+            Это популярный метод, который превращает сложные и абстрактные идеи в ясные и понятные визуальные изображения.
+            В математике трёхмерная визуализация помогает исследовать и понимать сложные структуры и формы, что особенно полезно при изучении многомерных объектов, таких как гиперповерхности или многомерные графики функций.<br><br>
+            В архитектуре трёхмерная визуализация используется для создания реалистичных моделей зданий и структур, что позволяет архитекторам и клиентам лучше представить конечный продукт. Это также облегчает обнаружение потенциальных проблем в дизайне до начала строительства и помогает в продаже проектов застройщикам и инвесторам. <br><br>
+            Визуализация делает проекты более доступными для понимания и обсуждения, что важно для согласования и утверждения проектных решений.</h2>
+            <img src = https://aecmag.com/wp-content/uploads/2021/03/3-3D-Repo-Unreal-Engine-.jpg>
+        </div>
+        <div id = content2>
+            <h2>Различное ПО как вариативные способы трёхмерной визуализации:</h2>
+            <a href = "/opengl">
+                <img src="https://habrastorage.org/web/c9e/9b2/a3b/c9e9b2a3baf749ab8e2b385c6d93d966.png">
+                <p>OpenGL (Open Graphics Library) — это кроссплатформенный программный интерфейс (API) для разработки приложений, работающих с двумерной и трёхмерной графикой. Этот стандарт определяет набор функций, которые разработчик может использовать для управления графическим оборудованием непосредственно от программного обеспечения.</p>
+            </a>
+            <a href = "/threedmax">
+                <img src="https://soft-na-russkom.ru/wp-content/uploads/2019/12/3Ds-Max-2018-1-min.jpg">
+                <p>3ds Max — это профессиональное программное обеспечение для 3D-моделирования, анимации и визуализации, разработанное компанией Autodesk. Широко используется в индустрии компьютерных игр, при создании анимационных фильмов и визуальных эффектов, а также в архитектурной визуализации и дизайне.</p>
+            </a>
+            <a href = "/ue">
+                <img src="https://derivative.ca/sites/default/files/field/body-images/237704578_2979055619017433_3542015242408351741_n.png">
+                <p>Unreal Engine — это передовой инструмент для создания игр и интерактивного 3D-контента, разработанный компанией Epic Games. Это один из самых популярных игровых движков в мире, который также используется в кинематографе, телевидении, архитектуре, автомобильной промышленности и т.д.</p>
+            </a>
+            <a href = "/unity">
+                <img src="https://unity.com/sites/default/files/styles/social_media_sharing/public/2022-02/U_Logo_White_CMYK.jpg?h=c66d06c9&itok=YQzbOLDK">
+                <p>Unity — это мощная кроссплатформенная среда разработки, которая используется для создания двухмерных и трехмерных игр, а также интерактивных симуляций и визуализаций. Она позволяет разработчикам и дизайнерам создавать игры и приложения для множества платформ, включая ПК, консоли, мобильные устройства и веб.</p>
+            </a>
+        </div>
+        <div id = endContent>
+            <h2>Примеры использования различного ПО<br>для визуализации математических моделей и архитектуры</h2>
+            <div class = examples>
+                <h3>OpenGL</h3>
+                <div>
+                    <img src="https://quinn-curtis.com/products/images/3dpp1.jpg">
+                    <img src="https://i.ytimg.com/vi/93c_Z_omBnk/maxresdefault.jpg">
+                </div>
+                <h3>3DS MAX</h3>
+                <div>
+                    <img src="https://www.nofuss.me/wp-content/uploads/2022/07/Brewbar_01_people-1-scaled.jpg">
+                    <img src="https://dg53gp9bd7dcq.cloudfront.net/files/4624/screenshots/1509852840881_1080_30.jpg">
+                </div>
+                <h3>Unreal Engine</h3>
+                <div>
+                    <img src="https://www.mdpi.com/asi/asi-06-00074/article_deploy/html/images/asi-06-00074-g007-550.jpg">
+                    <img src="https://i.ytimg.com/vi/eTt7AGIpV2I/maxresdefault.jpg">
+                </div>
+                <h3>Unity</h3>
+                <div>
+                    <img src="https://sites.psu.edu/bdssblog/files/2017/03/newBG-269qf7e.png">
+                    <img src="https://blog-api.unity.com/sites/default/files/2014/03/Gallery-Pictures-Interior.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

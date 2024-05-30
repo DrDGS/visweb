@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Open+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+header{
+    background: rgb(54, 54, 54);
+}
+
+header{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(34, 34, 34);
+    border-bottom: 0.5vh solid black;
+    display: flex;
+    justify-content: stretch;
+    align-content: center;
+    align-items: center;
+    padding: 2%;
+    transition: all 0.2s ease 0s;
+}
+
+header img{
+    width: 10vh;
+    height: 10vh;
+    margin-left: 1vh;
+    background: rgb(78, 78, 78);
+    border-radius: 0.5vh;
+    transition: all 0.2s ease 0s;
+}
+
+header span{
+    color: rgb(209, 209, 209);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3.5vh;
+    font-weight: lighter;
+    margin-left: 5vh;
+    transition: all 0.2s ease 0s;
+}
+
+header buttons{
+    width:100%;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header li{
+    display: inline-block;
+    padding: 0% 3vh 0 0;
+    user-select: none; 
+}
+
+header li a{
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 1.7vh;
+    margin-left: 2vh;
+    padding: 1.3vh 4vh;
+    background-color: rgb(255, 255, 255, 1);
+    border: none;
+    border-radius: 3vh;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+}
+
+header li a:hover{
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 2vh;
+}
+
+body{
+    background: rgb(119,119,119);
+    background: linear-gradient(180deg, rgba(119,119,119,1) 0%, rgba(171,171,171,1) 100%);
+}
+
+content{
+    width: 100%;
+    margin-top: 15vh;
+    font-size: 20px;
+    display: inline-block;
+}
+
+#contentHeader{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+#contentHeader img{
+    z-index: -10;
+    margin:100px;
+    width: 900px;
+    position: absolute;
+    opacity: 0.2;
+    transition: 0.3s;
+    animation: fadeIn ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn{
+    0% {
+        margin-top: 100vh;
+        opacity: 0%;
+    }
+
+    100% {
+        margin-top: 95vh;
+        opacity: 100%;
+    }
+}
+
+#contentHeader h1{
+    z-index: 2;
+    margin-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    text-shadow: 4px 4px 5px black;
+}
+
+#content1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    color: white;
+    margin-top: 700px;
+    padding: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#content1 h2{
+    font-size: 25px;
+    font-weight: lighter;
+    text-shadow: 2px 2px 0px black;
+    padding: 5px;
+    border-color:black;
+    border: 5px solid rgb(90,90,90);
+    border-radius: 10px;
+}
+
+#content1 img{
+    margin: 5px;
+    height: 475px;
+    border-color:black;
+    border: 5px solid rgb(90,90,90);
+    border-radius: 10px;
+}
+
+#content2{
+    color: white;
+    padding: 30px;
+    width: 100%;
+}
+
+#content2 h2{
+    margin-left: 30px;
+    letter-spacing: 1px;
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow: 2px 2px 0px black;
+    padding: 5px;
+}
+
+#content2 a{
+    color:white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: rgb(70, 70, 70);
+    margin: 10px;
+    padding: 10px;
+    margin-left: 100px;
+    width: 1650px;
+    height: 100px;
+    transition: all 0.2s ease 0s;
+    border-radius: 5px;
+}
+
+#content2 a:hover{
+    background-color: rgb(80, 80, 80);
+}
+
+#content2 a img{
+    width: 150px;
+    height: 80px;
+    border-radius: 5%;
+}
+
+#content2 a p{
+    text-shadow: 1px 1px 0px black;
+    margin-top: 15px;
+    margin-left: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+#endContent{
+    color: white;
+    padding: 30px;
+    width: 100%;
+}
+
+#endContent h2{
+    margin-left: 30px;
+    letter-spacing: 1px;
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow: 2px 2px 0px black;
+    padding: 5px;
+}
+
+.examples{
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.examples h3{
+    width: 100%;
+    text-align: center;
+    text-shadow: 1px 1px 0px black;
+    margin-top: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.examples div{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(70,70,70);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.examples div img{
+    height: 400px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+footer{
+    width: 100%;
+    margin-top: 30px;
+    padding: 3%;
+    color: white;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+}
+
+footer div{
+    margin-right: 100px;
+}
+
+footer div h3{
+    margin-bottom: 30px;
+    color: white;
+    border-color: #ffffff;
+    border-width: 1cm;
+    border-radius: 5%;
+}
+
+footer div ul{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+footer div ul li{
+    color: black;
+    background-color: white;
+    border-radius: 8px;
+    width:fit-content;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+footer div ul li:hover{
+    background-color: rgb(255,255,255,0.8);
+    border-radius: 4px;
+}
+
+footer div ul li a{
+    height: 12px;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+}
+
+#OpenGL{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: fit-content;
+    margin: 20px;
+}
+
+#OpenGLText{
+    width: 100%;
+    color:rgb(255, 255, 255);
+    text-shadow: 1px 1px 0px black;
+    padding: 10px;
+    background-color: rgb(90,90,90);
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#OpenGLImgs{
+    height: fit-content;
+    width:40%;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 100%;
+    background-color: rgb(90,90,90);
+    border-radius: 10px;
+}
+
+#OpenGLImgs img{
+    width: 800px;
+    height: 430px;
+    margin: 20px;
+    border-radius: 10px;
+}
